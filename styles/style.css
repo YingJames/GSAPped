@@ -1,10 +1,47 @@
-#plane--container {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+h1 {
+  font-size: 15vw;
 }
 
-#spacer {
-  height: 100vh;
+#grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, auto);
 }
+.col {
+  position: relative;
+  box-sizing: border-box;
+  padding: 6rem;
+  height: 100vh;
+  left: 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(216, 214, 192, 0.85) 25.35%,
+    rgba(216, 214, 192, 0) 100%
+  );
+}
+
+.col2 {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  #grid {
+    display: inline;
+  }
+  .col1 {
+    z-index: 2;
+  }
+  .col2 {
+    z-index: 1;
+  }
+
+}
+
+/* .col2 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+} */
