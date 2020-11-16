@@ -3,6 +3,10 @@ h1 {
   font-family: 'Abril Fatface';
 }
 
+body {
+  margin: 0;
+}
+
 #intro {
   z-index: 3;
 }
@@ -38,7 +42,7 @@ h1 {
     z-index: 2;
     position: absolute;
     width: 80%;
-    opacity: 0.5;
+    background: rgba(216, 214, 192, 0.7);
   }
   .col2 {
     width: 100vw;
