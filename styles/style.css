@@ -3,6 +3,10 @@ h1 {
   font-family: 'Abril Fatface';
 }
 
+#intro {
+  z-index: 3;
+}
+
 #grid {
   box-sizing: border-box;
   display: grid;
@@ -14,19 +18,17 @@ h1 {
   box-sizing: border-box;
   padding: 6rem;
   height: 100vh;
-  background: linear-gradient(
-    90deg,
-    rgba(216, 214, 192, 0.85) 25.35%,
-    rgba(216, 214, 192, 0) 100%
-  );
+  background: rgba(216, 214, 192);
 }
 
 .col2 {
-  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
 }
 
 #row1 {
-  background-image: url(https://www.roomsforafrica.com/images/Weekend_Getaways_kagga_kamma.jpg);
+  background-image: url("https://www.roomsforafrica.com/images/Weekend_Getaways_kagga_kamma.jpg");
 }
 
 @media (max-width: 768px) {
@@ -35,10 +37,10 @@ h1 {
   }
   .col1 {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
   }
   .col2 {
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     width: 100vw;
   }
