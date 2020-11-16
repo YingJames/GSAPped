@@ -1,6 +1,24 @@
-#plane--container {
+.col {
+  box-sizing: border-box;
   display: flex;
-  height: 100vh;
   align-items: center;
-  justify-content: center;
+  height: 100vh;
+}
+
+
+h1 {
+  font-size: 15vw;
+}
+
+
+.fade{
+  box-sizing: border-box;
+  position: absolute;
+  padding: 6rem;
+  width: 80vw;
+  height: 100vh;
+  left: 0px;
+
+
+  background: linear-gradient(90deg, rgba(216, 214, 192, 0.85) 25.35%, rgba(216, 214, 192, 0) 100%);
 }
