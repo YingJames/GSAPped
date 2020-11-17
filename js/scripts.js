@@ -1,30 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger);
-// function initParallax() {
-//   gsap.utils.toArray(".col2 .parallax").forEach((section, i) => {
-//     const heightDiff = section.offsetHeight - section.parentElement.offsetHeight;
-    
-//     gsap.fromTo(section,{ 
-//       y: -heightDiff
-//     }, {
-//       scrollTrigger: {
-//         trigger: section,
-//         scrub: true
-//       },
-//       y: 0,
-//       ease: "none"
-//     });
-//   });
-
-
-// }
-
-// function initPage() {
-//   initParallax();
-// }
-
-// initPage();
-
-
 gsap.utils.toArray(".col--2").forEach((section, i) => {
   section.bg = section.querySelector(".bg"); 
 
