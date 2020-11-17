@@ -17,6 +17,7 @@ body {
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, auto);
 }
+
 .col {
   position: relative;
   box-sizing: border-box;
@@ -25,39 +26,41 @@ body {
   background: rgba(216, 214, 192);
 }
 
-.col h1 {
-  white-space: nowrap;
+.col--2 {
+  height: 100vh;
+  padding: 0;
+}
+.bg {
+  height: 100vh;
 }
 
-.col2 {
-  background-repeat: no-repeat;
+#bg--leaves {
+  background-image: url("https://images.unsplash.com/photo-1605607344782-3c5dad0cb1cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
   background-size: cover;
 }
 
-.row1 {
-  background-image: url("https://www.roomsforafrica.com/images/Weekend_Getaways_kagga_kamma.jpg");
+#bg--water {
+  background-image: url("/images/water.jpg");
+}
+
+#bg--river {
+  background-image: url("https://images.unsplash.com/photo-1605466407639-7f6ce8276fa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
 }
 
 @media (max-width: 768px) {
   #grid {
     display: inline;
   }
-  .col1 {
+
+  .col--1 {
     position: absolute;
     z-index: 2;
     width: 80%;
-    background: rgba(216, 214, 192, 0.7);
+    background: rgba(216, 214, 192, 0.8);
   }
-  .col2 {
+  .col--2 {
     width: 100vw;
+    height: 100vh;
   }
 
 }
-
-/* .col2 {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-} */
