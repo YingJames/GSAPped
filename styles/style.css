@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Wildfox';
+  src: url("/assets/WildFox.otf") format("opentype");
+}
+
 #row--1--color {
   background-color: #d8d6c0;
 }
@@ -20,11 +25,19 @@ body {
 }
 
 #intro {
-  background-color: #c9e3ee;
+  background-color: #C7D0B5;
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
-#intro h1 {
-  padding-top: 40vh;
+#intro--title {
+  font-family: 'Wildfox';
+  font-size: 15vw;
+  padding-left: 200;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 1721;
+  stroke-dashoffset: 50px;
 }
 
 #grid {
