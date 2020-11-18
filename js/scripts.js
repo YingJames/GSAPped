@@ -48,14 +48,13 @@ function initAnimation() {
   // });
   gsap.to("#intro--title", {
     duration: 2,
-    x: -300,
-    duration: 2,
+    x: -150,
     scrollTrigger: {
       trigger: "#intro",
       start: "bottom 90%",
       end: "bottom top",
       markers: true,
-      scrub: true,
+      scrub: 1,
     },
   });
 }
@@ -70,6 +69,7 @@ function initAnimation() {
 //       },
 //     };
 // }
+
 
 initParallax();
 initAnimation();
