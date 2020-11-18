@@ -39,37 +39,38 @@ function initParallax() {
 }
 
 function initAnimation() {
-  let tl = gsap.timeline();
-  // gsap.from("#intro--title", {
-  //   x: -100,
-  //   opacity: 0,
-  //   ease: "power4",
-  //   duration: 3,
-  // });
-  gsap.to("#intro--title", {
-    duration: 2,
-    x: -150,
-    scrollTrigger: {
-      trigger: "#intro",
-      start: "bottom 90%",
-      end: "bottom top",
-      markers: true,
-      scrub: 1,
-    },
+  const logo = document.querySelectorAll('#logo path');
+  for (let i = 0; i<logo.length; i++) {
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+  }
+
+  gsap.from("#intro--title", 
+    {
+    //FROM
+      x: -100,
+      opacity: 0,
+      ease: "power4",
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#intro",
+        start: "bottom bottom",
+        end: "bottom top",
+        scrub: 1,
+      }
+    });
+
+  gsap.from("#intro", {
+    backgroundColor: '#ffffff',
+    duration: 4,
+      scrollTrigger: {
+        trigger: "#intro",
+        start: "bottom bottom",
+        end: "bottom top",
+        scrub: 1,
+      }
   });
+
 }
-
-// function initSnap() {
-//   gsap.to(".col"),
-//     {
-//       snap: {
-//         snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-//         duration: 1,
-//         ease: "power4.inOut",
-//       },
-//     };
-// }
-
 
 initParallax();
 initAnimation();
