@@ -1,3 +1,13 @@
+#logo path:nth-child(1) {
+  stroke-dasharray: 1721;
+  stroke-dashoffset: 1721;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 1397;
+  stroke-dashoffset: 1397;
+}
+
 @font-face {
   font-family: 'Wildfox';
   src: url("/assets/WildFox.otf") format("opentype");
@@ -33,11 +43,6 @@ body {
   font-family: 'Wildfox';
   font-size: 15vw;
   padding-left: 200;
-}
-
-#logo path:nth-child(1) {
-  stroke-dasharray: 1721;
-  stroke-dashoffset: 50px;
 }
 
 #grid {

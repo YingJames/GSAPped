@@ -1,3 +1,4 @@
+@import "logo-animation";
 $row--num: 3;
 $intro--color: #C7D0B5;
 $col--colors--list: (
@@ -35,15 +36,6 @@ body {
   font-family: 'Wildfox';
   font-size: 15vw;
   padding-left: 200;
-}
-
-#logo path:nth-child(1) {
-  stroke-dasharray: 1721;
-  stroke-dashoffset: 50px;
-}
-
-#logo path:nth-child(2) {
-
 }
 
 #grid {

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC,IAAI,AAAA,UAAW,CAAA,CAAC,EAAE;EACtB,gBAAgB,EAAE,IAAI;EACtB,iBAAiB,EAAE,IAAI;CACxB;;AAED,AAAA,KAAK,CAAC,IAAI,AAAA,UAAW,CAAA,CAAC,EAAE;EACtB,gBAAgB,EAAE,IAAI;EACtB,iBAAiB,EAAE,IAAI;CACxB",
+    "sources": [
+        "logo-animation.scss"
+    ],
+    "names": [],
+    "file": "logo-animation.css"
+}
