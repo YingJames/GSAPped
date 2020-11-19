@@ -98,6 +98,6 @@ function initAnimation() {
 
 }
 
-initParallax();
-initTextAnime();
 initAnimation();
+initTextAnime();
+initParallax();
