@@ -8,11 +8,6 @@ $col--colors--list: (
   #eed2c9, // col--3
 );
 
-@font-face {
-  font-family: 'Wildfox';
-  src: url("/assets/WildFox.otf") format("opentype");
-}
-
 @for $i from 1 through $row--num {
   #row--#{$i}--color {
     background-color: nth($col--colors--list, $i);
@@ -35,7 +30,6 @@ body {
 }
 
 #intro--title {
-  font-family: 'Wildfox';
   font-size: 15vw;
   padding-left: 200;
 }

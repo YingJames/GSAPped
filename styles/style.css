@@ -1,4 +1,6 @@
 #logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,11 +41,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Wildfox';
-  src: url("/assets/WildFox.otf") format("opentype");
-}
-
 #row--1--color {
   background-color: #d8d6c0;
 }
@@ -72,7 +69,6 @@ body {
 }
 
 #intro--title {
-  font-family: 'Wildfox';
   font-size: 15vw;
   padding-left: 200;
 }

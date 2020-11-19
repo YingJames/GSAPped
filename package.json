@@ -1,0 +1,23 @@
+{
+  "name": "gsap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YingJames/GSAP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YingJames/GSAP/issues"
+  },
+  "homepage": "https://github.com/YingJames/GSAP#readme",
+  "dependencies": {
+    "text-to-svg": "^3.1.5"
+  },
+  "devDependencies": {},
+  "description": ""
+}

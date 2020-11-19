@@ -1,5 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
+function initTexttoSvg() {
+  const textToSVG = TextToSVG.loadSync();
+  const svg = textToSVG('hello');
+  console.log(svg)
+}
+
 function initParallax() {
   gsap.utils.toArray(".col--2").forEach((section, i) => {
     section.bg = section.querySelector(".bg");
@@ -98,6 +104,7 @@ function initAnimation() {
 
 }
 
+initTexttoSvg();
 initAnimation();
 initTextAnime();
 initParallax();
