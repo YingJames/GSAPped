@@ -1,4 +1,5 @@
 @import "logo-animation";
+
 $row--num: 3;
 $intro--color: #C7D0B5;
 $col--colors--list: (
@@ -29,6 +30,7 @@ body {
 
 #intro {
   background-color: $intro--color;
+  padding: 0;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
