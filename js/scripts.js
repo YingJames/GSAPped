@@ -61,7 +61,7 @@ function initTextAnime() {
         trigger: "#intro",
         scrub: 1,
         start: "bottom bottom",
-        end: "bottom top",          
+        end: "200% top",          
         markers: true,
         pin: true,
       }
