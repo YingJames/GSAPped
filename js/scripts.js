@@ -37,12 +37,38 @@ function initParallax() {
     }
   });
 }
-
-function initAnimation() {
+function initTextAnime() {
   const logo = document.querySelectorAll('#logo path');
+  let max = 80;
+  let min = -80;
   for (let i = 0; i<logo.length; i++) {
-    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+    let logoLength = logo[i].getTotalLength();
+
+    gsap.fromTo(logo[i], {
+      strokeDasharray: logoLength,
+      strokeDashoffset: logoLength,
+      scale: 1.5,
+      y: Math.floor(Math.random() * (max - min + 1) + min),
+    },
+    // TO
+    {
+      y: 0,
+      scale: 1,
+      strokeDashoffset: 0,
+      delay: i * 0.2,
+      ease: "power1",
+      scrollTrigger: {          
+        trigger: "#intro",
+        scrub: 1,
+        start: "bottom bottom",
+        end: "bottom top",          
+        markers: true,
+        pin: true,
+      }
+    });
   }
+}
+function initAnimation() {
 
   gsap.from("#intro--title", 
     {
@@ -73,4 +99,5 @@ function initAnimation() {
 }
 
 initParallax();
+initTextAnime();
 initAnimation();

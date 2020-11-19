@@ -1,29 +1,29 @@
-$strokeLength: (
-  637, 795, 860, 920,
-  620, 560, 620, 1200, 
-  597, 756, 905, 901, 
-  858
-);
+// $strokeLength: (
+//   637, 795, 860, 920,
+//   620, 560, 620, 1200, 
+//   597, 756, 905, 901, 
+//   858
+// );
 
-// to create sequence for each letter
-$letterCount: 13;
-@function lineAnimCalc($letter) {
-  $time: $letter * 0.2s;
-  @return $time;
-}
+// // to create sequence for each letter
+// $letterCount: 13;
+// @function lineAnimCalc($letter) {
+//   $time: $letter * 0.2s;
+//   @return $time;
+// }
 // loop to create letter animations
-@for $letter from 1 through $letterCount {
-  $time: lineAnimCalc($letter);
-  #logo path:nth-child(#{$letter}) {
-    stroke-dasharray: nth($strokeLength, $letter);
-    stroke-dashoffset: nth($strokeLength, $letter);
-    animation: line-anim 2.25s ease forwards lineAnimCalc($letter);
-  }
-};
+// @for $letter from 1 through $letterCount {
+//   $time: lineAnimCalc($letter);
+//   #logo path:nth-child(#{$letter}) {
+//     stroke-dasharray: nth($strokeLength, $letter);
+//     stroke-dashoffset: nth($strokeLength, $letter);
+//     animation: line-anim 2.25s ease forwards lineAnimCalc($letter);
+//   }
+// };
 
 
 #logo {
-  animation: fill 0.5s ease forwards 3.5s;
+  // animation: fill 0.5s ease forwards 3.5s;
   display: flex;
   margin: 0 auto;
   align-items: center;
