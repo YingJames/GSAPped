@@ -37,51 +37,5 @@ function initParallax() {
     }
   });
 }
-function initTextAnime() {
-  const logo = document.querySelectorAll('#logo path');
-  let max = 80;
-  let min = -80;
-  let tl = gsap.timeline();
-  for (let i = 0; i<logo.length; i++) {
-    let logoLength = logo[i].getTotalLength();
 
-    tl.fromTo(logo[i], {
-      strokeDasharray: logoLength,
-      strokeDashoffset: logoLength,
-      scale: 1.5,
-      y: Math.floor(Math.random() * (max - min + 1) + min),
-    },
-    // TO
-    {
-      y: 0,
-      scale: 1,
-      strokeDashoffset: 0,
-      ease: "power1",
-      scrollTrigger: {          
-        trigger: "#intro",
-        scrub: 1,
-        start: "bottom bottom",
-        end: "bottom top",          
-        pin: true,
-      }
-    });
-
-    // tl.fromTo(logo, {
-    //   fill: transparent,
-    // },
-    // {
-    //   fill: "#FEC9C9",
-    //   scrollTrigger: {          
-    //     trigger: "#intro",
-    //     start: "bottom bottom",
-    //     bottom: "bottom top",
-    //     scrub: 1,
-    //     markers: true,
-    //     pin: true,
-    //   }
-    // });
-  }
-}
-
-initTextAnime();
 initParallax();
