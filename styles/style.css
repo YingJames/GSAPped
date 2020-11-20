@@ -1,3 +1,15 @@
+#row--1--color {
+  background-color: #d8d6c0;
+}
+
+#row--2--color {
+  background-color: #c9eee6;
+}
+
+#row--3--color {
+  background-color: #eed2c9;
+}
+
 #logo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,48 +21,6 @@
       -ms-flex-align: center;
           align-items: center;
   width: 90vw;
-}
-
-@-webkit-keyframes line-anim {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes line-anim {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes fill {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #FEC9C9;
-  }
-}
-
-@keyframes fill {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #FEC9C9;
-  }
-}
-
-#row--1--color {
-  background-color: #d8d6c0;
-}
-
-#row--2--color {
-  background-color: #c9eee6;
-}
-
-#row--3--color {
-  background-color: #eed2c9;
 }
 
 h1 {
