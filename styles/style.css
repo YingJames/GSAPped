@@ -30,10 +30,11 @@ h1 {
 
 body {
   margin: 0;
+  overflow: auto;
 }
 
 #intro {
-  background-color: #C7D0B5;
+  background-color: #ffeee0;
   padding: 0;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }

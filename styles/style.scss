@@ -1,5 +1,5 @@
 $row--num: 3;
-$intro--color: #C7D0B5;
+$intro--color: #ffeee0;
 $col--colors--list: (
   #d8d6c0, // col--1
   #c9eee6, // col--2
@@ -26,8 +26,12 @@ h1 {
   font-family: "Abril Fatface";
 }
 
+html {
+}
+
 body {
   margin: 0;
+  overflow: auto;
 }
 
 #intro {
