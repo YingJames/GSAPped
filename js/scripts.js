@@ -1,11 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-function initTexttoSvg() {
-  const textToSVG = TextToSVG.loadSync();
-  const svg = textToSVG('hello');
-  console.log(svg)
-}
-
 function initParallax() {
   gsap.utils.toArray(".col--2").forEach((section, i) => {
     section.bg = section.querySelector(".bg");
@@ -61,7 +55,7 @@ function initTextAnime() {
       y: 0,
       scale: 1,
       strokeDashoffset: 0,
-      delay: i * 0.2,
+      fill: "#FEC9C9",
       ease: "power1",
       scrollTrigger: {          
         trigger: "#intro",
@@ -74,37 +68,6 @@ function initTextAnime() {
     });
   }
 }
-function initAnimation() {
 
-  gsap.from("#intro--title", 
-    {
-    //FROM
-      x: -100,
-      opacity: 0,
-      ease: "power4",
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#intro",
-        start: "bottom bottom",
-        end: "bottom top",
-        scrub: 1,
-      }
-    });
-
-  gsap.from("#intro", {
-    backgroundColor: '#ffffff',
-    duration: 4,
-      scrollTrigger: {
-        trigger: "#intro",
-        start: "bottom bottom",
-        end: "bottom top",
-        scrub: 1,
-      }
-  });
-
-}
-
-initTexttoSvg();
-initAnimation();
 initTextAnime();
 initParallax();
