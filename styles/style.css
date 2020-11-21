@@ -38,7 +38,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 80%;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -112,6 +112,9 @@ h1 {
   position: relative;
   padding: 5rem;
   height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
@@ -134,7 +137,7 @@ h1 {
 .bg {
   min-height: -webkit-fill-available;
   min-height: -moz-available;
-  min-height: fill-available;
+  min-height: stretch;
 }
 
 #bg--leaves {
@@ -156,11 +159,6 @@ h1 {
   }
   #headline {
     width: 70vw;
-  }
-  .col {
-    min-height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: fill-available;
   }
   .col--1 {
     position: absolute;
