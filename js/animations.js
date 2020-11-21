@@ -16,8 +16,8 @@ function initTextAnimate() {
       },
       // TO
       {
-        duration: 1.5,
-        delay: i * 0.2,
+        duration: 1.0,
+        delay: i * 0.1,
         y: 0,
         scale: 1,
         strokeDashoffset: 0,
@@ -31,7 +31,7 @@ function initTextAnimate() {
         fill: "transparent",
       },
       {
-        delay: 3.0,
+        delay: 1.5,
         duration: 0.5,
         fill: "#FEC9C9",
       }
@@ -40,7 +40,43 @@ function initTextAnimate() {
 }
 
 function initHeroAnimate() {
+  const hero = document.querySelector('.hero');
+  const slider = document.querySelector('.slider');
+  const headline = document.querySelector('.headline');
+
+  const tl = gsap.timeline();
+
+  tl.fromTo(hero, {
+    height: "0%",
+  },
+  // TO
+  {
+    duration: 1, 
+    ease: "power2.inOut",
+    height: "80%",
+  });
+
+  tl.fromTo(hero, 
+    { width: "100%"},
+  // TO
+    { 
+      duration: 1.2,
+      width: "80%",
+      ease: "power2.inOut",
+    
+    });
+
+  tl.fromTo(slider, {
+    x: "-100%"
+  },
+  // TO
+  {
+    duration: 1.2,
+    x: "0%",
+    ease: "power2.inOut",
+  });
 
 }
 
+initHeroAnimate();
 initTextAnimate();
