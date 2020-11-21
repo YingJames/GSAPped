@@ -3,16 +3,8 @@
     display: inline;
   }
 
-  #intro h1{
-    padding-top: 50vh;
-  }
-
   #headline {
     width: 70vw;
-  }
-
-  .col {
-    min-height: -webkit-fill-available;
   }
 
   .col--1 {
@@ -23,9 +15,5 @@
 
   .col--2 {
     width: 100vw;
-  }
-
-  .bg {
-    min-height: -webkit-fill-available;
   }
 }

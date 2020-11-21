@@ -28,15 +28,16 @@ h1 {
 .col {
   position: relative;
   padding: 5rem;
-  height: $full--height;
+  min-height: webkit-fill-available;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
 .col--title {
   font-family: "Abril Fatface";
+  position: absolute;
   font-size: 10vw;
   white-space: nowrap;
-  padding-top: 35vh;
+  top: 60%;
 }
 
 .col--1 {
@@ -47,7 +48,7 @@ h1 {
 }
 
 .bg {
-  height: $full--height;
+  min-height: -webkit-fill-available;
 }
 
 #bg--leaves {
