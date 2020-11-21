@@ -16,7 +16,7 @@ function initTextAnimate() {
       },
       // TO
       {
-        duration: 2.5,
+        duration: 1.5,
         delay: i * 0.2,
         y: 0,
         scale: 1,
