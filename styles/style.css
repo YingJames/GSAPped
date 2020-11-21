@@ -1,11 +1,12 @@
 #headline {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
+  height: auto;
   z-index: 1;
 }
 
