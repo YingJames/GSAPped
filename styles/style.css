@@ -133,6 +133,8 @@ h1 {
 
 .bg {
   min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
 }
 
 #bg--leaves {
@@ -157,6 +159,8 @@ h1 {
   }
   .col {
     min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    min-height: fill-available;
   }
   .col--1 {
     position: absolute;
