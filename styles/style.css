@@ -10,7 +10,14 @@
   background-color: #eed2c9;
 }
 
-#logo {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#headline {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -29,8 +36,7 @@ h1 {
 }
 
 body {
-  margin: 0;
-  overflow: auto;
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
 #intro {
@@ -61,6 +67,7 @@ body {
           box-sizing: border-box;
   padding: 5rem;
   height: 100vh;
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
 .col--title {
