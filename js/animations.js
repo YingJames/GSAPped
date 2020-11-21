@@ -1,5 +1,5 @@
 function initTextAnimate() {
-  const logo = document.querySelectorAll("#logo path");
+  const logo = document.querySelectorAll("#headline path");
   let max = 80;
   let min = -80;
   let tl = gsap.timeline();
