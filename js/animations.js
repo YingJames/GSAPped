@@ -42,7 +42,6 @@ function initTextAnimate() {
 function initHeroAnimate() {
   const hero = document.querySelector('.hero');
   const slider = document.querySelector('.slider');
-  const headline = document.querySelector('.headline');
 
   const tl = gsap.timeline();
 
@@ -66,7 +65,7 @@ function initHeroAnimate() {
     
     });
 
-  tl.fromTo(slider, {
+  tl.fromTo(slider , {
     x: "-100%"
   },
   // TO
@@ -74,7 +73,7 @@ function initHeroAnimate() {
     duration: 1.2,
     x: "0%",
     ease: "power2.inOut",
-  });
+  }, "-=1.2");
 
 }
 
