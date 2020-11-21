@@ -1,0 +1,21 @@
+$intro--color: #ffeee0;
+
+#headline {
+  // animation: fill 0.5s ease forwards 3.5s;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 90vw;
+}
+
+#intro {
+  background-color: $intro--color;
+  padding: 0;
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
+}
+
+#intro--title {
+  font-size: 15vw;
+  padding-left: 200;
+}

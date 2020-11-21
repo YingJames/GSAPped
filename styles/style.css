@@ -1,3 +1,27 @@
+#headline {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
+}
+
+#intro {
+  background-color: #ffeee0;
+  padding: 0;
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
+}
+
+#intro--title {
+  font-size: 15vw;
+  padding-left: 200;
+}
+
 #row--1--color {
   background-color: #d8d6c0;
 }
@@ -17,19 +41,6 @@
           box-sizing: border-box;
 }
 
-#headline {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90vw;
-}
-
 body {
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
@@ -37,17 +48,6 @@ body {
 h1 {
   font-size: 10vw;
   font-family: "Abril Fatface";
-}
-
-#intro {
-  background-color: #ffeee0;
-  padding: 0;
-  background-image: url("https://transparenttextures.com/patterns/climpek.png");
-}
-
-#intro--title {
-  font-size: 15vw;
-  padding-left: 200;
 }
 
 #grid {
