@@ -11,6 +11,10 @@
     width: 70vw;
   }
 
+  .col {
+    height: var(--height);
+  }
+
   .col--1 {
     position: absolute;
     width: 80%;
@@ -19,6 +23,5 @@
 
   .col--2 {
     width: 100vw;
-    height: 100vh;
   }
 }
