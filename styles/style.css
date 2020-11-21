@@ -1,19 +1,16 @@
-:root {
-  --height: 100vh;
-}
-
 #headline {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
+  height: auto;
   z-index: 1;
 }
 
-#intro {
+#hero--header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,11 +34,11 @@
   z-index: 0;
 }
 
-section {
+#hero--section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 80%;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -120,13 +117,15 @@ h1 {
 
 .col--title {
   font-family: "Abril Fatface";
+  position: absolute;
   font-size: 10vw;
   white-space: nowrap;
-  padding-top: 35vh;
+  top: 60%;
 }
 
 .col--1 {
   z-index: 2;
+  left: 0;
 }
 
 .col--2 {
@@ -134,7 +133,9 @@ h1 {
 }
 
 .bg {
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
 }
 
 #bg--leaves {
@@ -154,14 +155,13 @@ h1 {
   #grid {
     display: inline;
   }
-  #intro h1 {
-    padding-top: 50vh;
-  }
   #headline {
     width: 70vw;
   }
   .col {
-    height: var(--height);
+    min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    min-height: stretch;
   }
   .col--1 {
     position: absolute;
@@ -170,9 +170,6 @@ h1 {
   }
   .col--2 {
     width: 100vw;
-  }
-  .bg {
-    height: var(--height);
   }
 }
 /*# sourceMappingURL=style.css.map */

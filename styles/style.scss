@@ -28,26 +28,28 @@ h1 {
 .col {
   position: relative;
   padding: 5rem;
-  height: $full--height;
+  height: 100vh;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
 .col--title {
   font-family: "Abril Fatface";
+  position: absolute;
   font-size: 10vw;
   white-space: nowrap;
-  padding-top: 35vh;
+  top: 60%;
 }
 
 .col--1 {
   z-index: 2;
+  left: 0;
 }
 .col--2 {
   padding: 0;
 }
 
 .bg {
-  height: $full--height;
+  min-height: stretch;
 }
 
 #bg--leaves {
