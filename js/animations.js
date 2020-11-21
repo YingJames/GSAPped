@@ -1,4 +1,4 @@
-function initTextAnime() {
+function initTextAnimate() {
   const logo = document.querySelectorAll("#logo path");
   let max = 80;
   let min = -80;
@@ -39,4 +39,8 @@ function initTextAnime() {
   }
 }
 
-initTextAnime();
+function initHeroAnimate() {
+
+}
+
+initTextAnimate();
