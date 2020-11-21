@@ -1,6 +1,7 @@
 :root {
   --height: 100vh;
 }
+
 $full--height: 100vh;
 $row--num: 3;
 $col--colors--list: (
@@ -8,8 +9,3 @@ $col--colors--list: (
   #c9eee6, // col--2
   #eed2c9, // col--3
 );
-
-:export {
-  height: $full--height;
-}
-

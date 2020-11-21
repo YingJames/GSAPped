@@ -2,10 +2,6 @@
   --height: 100vh;
 }
 
-:export {
-  height: 100vh;
-}
-
 #headline {
   position: absolute;
   top: 70%;
@@ -174,6 +170,9 @@ h1 {
   }
   .col--2 {
     width: 100vw;
+  }
+  .bg {
+    height: var(--height);
   }
 }
 /*# sourceMappingURL=style.css.map */
