@@ -30,13 +30,13 @@
   width: 90vw;
 }
 
+body {
+  background-image: url("https://transparenttextures.com/patterns/climpek.png");
+}
+
 h1 {
   font-size: 10vw;
   font-family: "Abril Fatface";
-}
-
-body {
-  background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
 #intro {
