@@ -103,11 +103,11 @@ function initColAnimate(width) {
     );
   }
 }
+initColAnimate("50vw");
 ScrollTrigger.matchMedia({
   "(max-width: 768px)": function () {
     initColAnimate("80vw");
   }});
 
-initColAnimate("50vw");
 initHeroAnimate();
 initTextAnimate();
