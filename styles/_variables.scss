@@ -1,0 +1,12 @@
+$full--height: 100vh;
+$row--num: 3;
+$col--colors--list: (
+  #d8d6c0, // col--1
+  #c9eee6, // col--2
+  #eed2c9, // col--3
+);
+
+:export {
+  height: $full--height;
+}
+

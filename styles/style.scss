@@ -1,12 +1,5 @@
+@import "variables";
 @import "hero";
-
-$row--num: 3;
-$col--colors--list: (
-  #d8d6c0, // col--1
-  #c9eee6, // col--2
-  #eed2c9, // col--3
-);
-
 // add different color to each row
 @for $i from 1 through $row--num {
   #row--#{$i}--color {
@@ -35,7 +28,7 @@ h1 {
 .col {
   position: relative;
   padding: 5rem;
-  height: 100vh;
+  height: $full--height;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
@@ -54,7 +47,7 @@ h1 {
 }
 
 .bg {
-  height: 100vh;
+  height: $full--height;
 }
 
 #bg--leaves {
