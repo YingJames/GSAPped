@@ -1,5 +1,5 @@
 :root {
-  --height: 100vh;
+  --mobile-height: 100vh;
 }
 
 #headline {
@@ -37,7 +37,7 @@
   z-index: 0;
 }
 
-section {
+#hero--section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +161,7 @@ h1 {
     width: 70vw;
   }
   .col {
-    height: var(--height);
+    height: var(--mobile-height);
   }
   .col--1 {
     position: absolute;
@@ -172,7 +172,7 @@ h1 {
     width: 100vw;
   }
   .bg {
-    height: var(--height);
+    height: var(--mobile-height);
   }
 }
 /*# sourceMappingURL=style.css.map */
