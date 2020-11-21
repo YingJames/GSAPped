@@ -7,6 +7,10 @@
     width: 70vw;
   }
 
+  .col {
+    min-height: stretch;
+  }
+
   .col--1 {
     position: absolute;
     width: 80%;
