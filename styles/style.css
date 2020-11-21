@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
   background: #ffeee0;
   background-image: url("/assets/climpek.png");
   z-index: 0;
@@ -110,7 +110,7 @@ h1 {
 .col {
   position: relative;
   padding: 5rem;
-  min-height: webkit-fill-available;
+  height: 100vh;
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
 }
 
@@ -153,6 +153,9 @@ h1 {
   }
   #headline {
     width: 70vw;
+  }
+  .col {
+    min-height: -webkit-fill-available;
   }
   .col--1 {
     position: absolute;

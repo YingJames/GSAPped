@@ -22,7 +22,7 @@ $intro--color: #ffeee0;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
   // background: linear-gradient(199.5deg, #FFFFFF 7.92%, #80AA26 100%);
   background: $intro--color;
   background-image: url("/assets/climpek.png");
