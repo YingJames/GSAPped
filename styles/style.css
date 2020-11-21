@@ -161,7 +161,7 @@ h1 {
     width: 70vw;
   }
   .col {
-    height: var(--mobile-height);
+    min-height: -webkit-fill-available;
   }
   .col--1 {
     position: absolute;
@@ -172,7 +172,7 @@ h1 {
     width: 100vw;
   }
   .bg {
-    height: var(--mobile-height);
+    min-height: -webkit-fill-available;
   }
 }
 /*# sourceMappingURL=style.css.map */

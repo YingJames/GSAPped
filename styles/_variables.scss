@@ -1,7 +1,7 @@
 :root {
   --mobile-height: 100vh;
 }
-
+$mobile-height: var(--mobile-height);
 $full--height: 100vh;
 $row--num: 3;
 $col--colors--list: (

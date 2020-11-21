@@ -12,7 +12,7 @@
   }
 
   .col {
-    height: var(--mobile-height);
+    min-height: -webkit-fill-available;
   }
 
   .col--1 {
@@ -26,6 +26,6 @@
   }
 
   .bg {
-    height: var(--mobile-height);
+    min-height: -webkit-fill-available;
   }
 }
