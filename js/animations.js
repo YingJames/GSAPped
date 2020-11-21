@@ -22,7 +22,6 @@ function initTextAnimate() {
         scale: 1,
         strokeDashoffset: 0,
         ease: "power4",
-
       }
     );
     gsap.fromTo(
@@ -40,42 +39,75 @@ function initTextAnimate() {
 }
 
 function initHeroAnimate() {
-  const hero = document.querySelector('.hero');
-  const slider = document.querySelector('.slider');
+  const hero = document.querySelector(".hero");
+  const slider = document.querySelector(".slider");
 
   const tl = gsap.timeline();
 
-  tl.fromTo(hero, {
-    height: "0%",
-  },
-  // TO
-  {
-    duration: 1, 
-    ease: "power2.inOut",
-    height: "80%",
-  });
+  tl.fromTo(
+    hero,
+    {
+      height: "0%",
+    },
+    // TO
+    {
+      duration: 1,
+      ease: "power2.inOut",
+      height: "80%",
+    }
+  );
 
-  tl.fromTo(hero, 
-    { width: "100%"},
-  // TO
-    { 
+  tl.fromTo(
+    hero,
+    { width: "100%" },
+    // TO
+    {
       duration: 1.2,
       width: "80%",
       ease: "power2.inOut",
-    
-    });
+    }
+  );
 
-  tl.fromTo(slider , {
-    x: "-100%"
-  },
-  // TO
-  {
-    duration: 1.2,
-    x: "0%",
-    ease: "power2.inOut",
-  }, "-=1.2");
-
+  tl.fromTo(
+    slider,
+    {
+      x: "-100%",
+    },
+    // TO
+    {
+      duration: 1.2,
+      x: "0%",
+      ease: "power2.inOut",
+    },
+    "-=1.2"
+  );
 }
 
+function initColAnimate(width) {
+  const col = document.querySelectorAll(".col--1");
+  for (let i = 0; i < col.length; i++) {
+    gsap.fromTo(
+      col[i],
+      {
+        width: "100vw",
+      },
+      {
+        duration: 1,
+        ease: "power2.inOut",
+        width: width,
+        scrollTrigger: {
+          trigger: col[i],
+          start: "top 40%",
+        },
+      }
+    );
+  }
+}
+ScrollTrigger.matchMedia({
+  "(max-width: 768px)": function () {
+    initColAnimate("80vw");
+  }});
+
+initColAnimate("50vw");
 initHeroAnimate();
 initTextAnimate();
