@@ -1,11 +1,11 @@
 #headline {
   position: absolute;
-  top: 40%;
+  top: 70%;
   left: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vw;
+  width: 40vw;
   z-index: 1;
 }
 
@@ -152,6 +152,9 @@ h1 {
   }
   #intro h1 {
     padding-top: 50vh;
+  }
+  #headline {
+    width: 70vw;
   }
   .col--1 {
     position: absolute;
