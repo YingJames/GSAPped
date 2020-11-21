@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  #grid {
+    display: inline;
+  }
+
+  #intro h1{
+    padding-top: 50vh;
+  }
+
+  #headline {
+    width: 70vw;
+  }
+
+  .col--1 {
+    position: absolute;
+    width: 80%;
+    opacity: 80%;
+  }
+
+  .col--2 {
+    width: 100vw;
+    height: 100vh;
+  }
+}

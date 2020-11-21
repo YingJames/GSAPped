@@ -1,4 +1,5 @@
 @import "hero";
+@import "mediaQueries";
 
 $row--num: 3;
 $col--colors--list: (
@@ -70,27 +71,3 @@ h1 {
   background-image: url("https://images.unsplash.com/photo-1605466407639-7f6ce8276fa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
 }
 
-@media (max-width: 768px) {
-  #grid {
-    display: inline;
-  }
-
-  #intro h1{
-    padding-top: 50vh;
-  }
-
-  #headline {
-    width: 70vw;
-  }
-
-  .col--1 {
-    position: absolute;
-    width: 80%;
-    opacity: 80%;
-  }
-
-  .col--2 {
-    width: 100vw;
-    height: 100vh;
-  }
-}
